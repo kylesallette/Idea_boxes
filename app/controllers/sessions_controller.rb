@@ -1,8 +1,5 @@
-class SessionsController < ApplicationControllers
+class SessionsController < ApplicationController
 
-  def new
-
-  end
 
   def create
     @user = User.find_by(name: params[:name])
@@ -14,14 +11,13 @@ class SessionsController < ApplicationControllers
     end
   end
 
+  def new
+
+  end
 
   def destroy
     session[:user_id] = nil
     redirect_to root_path, :notice => "successfully logged out"
   end
-
-
-
-
 
 end
