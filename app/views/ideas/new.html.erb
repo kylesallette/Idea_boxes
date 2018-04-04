@@ -1,0 +1,16 @@
+
+
+
+<%= form_for [@user, @idea] do |f| %>
+<%= f.label :name  %>
+<%= f.text_field :name, placeholder: "Idea Title*" %>
+<%= f.label :content %>
+<%= f.text_area :content , placeholder: "Idea*",:size => "60%x12%"  %><br>
+<%= f.submit class: "sub-btn" %>
+<p> Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %></p>
+</div>
+<% Image.all.each do |image| %>
+<%= image_tag(image.url, :class=> "img-circular")%>
+<%= check_box_tag("image_url[]",image.id) %>
+<% end %>
+<% end %>

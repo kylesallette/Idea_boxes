@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+      <link rel="stylesheet" href="main.css"  type="text/css" />
+</head>
+  <body>
+    <header>
+      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    </header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+     <div class="welcome-user">
+      <h1> Welcome, <%= @user.name.capitalize %>!</h1><br/>
+        <%= link_to "View All Ideas", user_ideas_path(@user), method: "get", class: "button",  :id => "all-ideas"%>
+        <%= link_to "Create New Idea",  new_user_idea_path(@user), method: "get" ,class: "button",  :id => "new-idea"%>
+    </div>
+
+
+    <%= link_to "Log Out", logout_path, method: :delete %>
+  </body>
+  </html>

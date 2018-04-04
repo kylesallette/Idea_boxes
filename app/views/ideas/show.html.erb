@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <header>
+    <img class=""src="" alt="banner" height="300px" width="100%">
+  </header>
+  <body>
+<h1>Title:</h1><h3><%= @idea.name %></h3>
+    <h1>Body:</h1><%= @idea.content %><br>
+
+    <p><% @idea.images.each do |image| %></p>
+    <%= image_tag(image.url, size: "150x150" ) %><br/>
+    <% end %>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+        <%= link_to "Delete",  user_idea_path(@user, @idea), method: "delete" %>
+      </div>
+    </span>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+        <%= link_to "Edit", edit_user_idea_path(@user, @idea), method: "get" %>
+      </div>
+    </span>
+  </div>
+</div>
+</body>
+</html>
