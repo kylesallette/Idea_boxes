@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
   </head>
-  <header>
-    <img class=""src="" alt="banner" height="300px" width="100%">
-  </header>
   <body>
+    <header>
+      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    </header>
+    <ul>
+      <li><%= link_to "Home", user_path(@user) %></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ideas</a>
+        <div class="dropdown-content">
+          <div class="dropdown">
+              <div class="dropdown-content">
+                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+
+              </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
 <h1>Title:</h1><h3><%= @idea.name %></h3>
     <h1>Body:</h1><%= @idea.content %><br>
 
