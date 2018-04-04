@@ -1,15 +1,38 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="main.css"  type="text/css" />
+  </head>
+  <header>
+
+</header>
+  <body>
+    <div id="left"></div>
+   <div id="right"></div>
+   <div id="top"></div>
+   <div id="bottom"></div>
+    <div class="welcome-background">
+    <div class="login3  animated flip">
 <h3>Create a user here</h3>
 
-<%= form_for @user do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+<%= form_for @user, :html => { :class => "form grid_6" }  do |f| %>
 
-  <%= f.label :email %>
-  <%= f.text_field :email %>
+  <%= f.text_field :name, placeholder: "User Name*" %>
 
-  <%= f.label :password, "Password" %>
-  <%= f.text_field :password %>
 
-  <%= f.submit %>
+  <%= f.text_field :email, placeholder: "Email*" %>
+
+
+  <%= f.text_field :password, placeholder: "Password*" %>
+
+  <%= f.submit("Create User", :class=>"button3") %>
 <% end %>
+</div>
+<img class="image" src="/assets/welcome.png"  width="100%" />
+</div>
+</body>
+</html>
