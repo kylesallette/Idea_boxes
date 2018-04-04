@@ -1,3 +1,6 @@
+
+
+
 html { height: 100% }
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
@@ -30,6 +33,8 @@ margin-top: 15%
   width: 298px;
   align-items: center;
   text-align: center;
+    font-family: 'VT323', monospace;
+      font-size: 50px;
 }
 
 .login-3{
@@ -346,7 +351,7 @@ margin-top: 15%;
 .button1 {
   display: inline-block;
   padding: 15px 25px;
-  font-size: 24px;
+  font-size: 35px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -358,6 +363,7 @@ margin-top: 15%;
   box-shadow: 0 9px #999;
   margin-top: 35px;
   margin-left: 8%;
+    font-family: 'VT323', monospace;
 }
 
 .grid_6{
@@ -438,7 +444,7 @@ li.dropdown {
 
 
 .welcome-user{
-  width: 600px;
+  width: 40%;
   height: 400px;
   background-color: #2b0a37;
   margin-left: 30%;
@@ -448,6 +454,10 @@ border-bottom-right-radius: 5px;
 border-bottom-left-radius:5px;
 align-items: center;
 text-align: center;
+-webkit-box-shadow:0 0 20px blue;
+-moz-box-shadow: 0 0 20px blue;
+box-shadow:0 0 20px blue;
+
 }
 
 .row {
@@ -523,7 +533,7 @@ nav {
     div {
       padding: 12.5px 10px;
       &:hover {
-    
+
         a:hover {color: black;}
       }
     }
@@ -534,4 +544,41 @@ nav {
        margin-right:-10px;
        font-size: 16px;
    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    align-content: center;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+
+.index-pic{
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+}
+
+body {
+
+    font-family: 'VT323', monospace;font-size: 22px;
+}
+
+h3 {
+    font-family: 'VT323', monospace;
+
+}
+
+h2 {
+    font-family: 'VT323', monospace;
 }
