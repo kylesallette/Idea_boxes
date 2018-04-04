@@ -5,14 +5,16 @@
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+          <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
         <link rel="stylesheet" href="main.css"  type="text/css" />
   </head>
   <body>
     <header>
-      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    <img class="image" src="/assets/water.gif" height="300px" width="100%" />
     </header>
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
+        <li><%= link_to "Log Out", logout_path, method: :delete %></li>
 
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Ideas</a>
