@@ -1,5 +1,33 @@
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="main.css"  type="text/css" />
+  </head>
+  <body>
+    <header>
+      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    </header>
+    <ul>
+      <li><%= link_to "Home", user_path(@user) %></li>
 
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ideas</a>
+        <div class="dropdown-content">
+          <div class="dropdown">
+              <div class="dropdown-content">
+                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+
+              </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
 
 <%= form_for [@user, @idea] do |f| %>
 <%= f.label :name  %>
@@ -14,3 +42,5 @@
 <%= check_box_tag("image_url[]",image.id) %>
 <% end %>
 <% end %>
+</body>
+</html>

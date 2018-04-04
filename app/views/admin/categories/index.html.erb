@@ -26,25 +26,24 @@
       </li>
     </ul>
 
-
-<% @ideas.each do |idea| %>
-<div class="ideas">
-<h2><%= link_to idea.name, user_idea_path(@user, idea) %></h2>
-<br>
-<span class="button-wrap">
-  <div class="button button-raised button-primary button-pill">
-    <%= link_to "Delete",  user_idea_path(@user, idea), method: "delete" %>
+<% @categories.each do |category| %>
+    <div class="flex-container">
+      <div>
+    <h2><%= category.title %></h2>
+    <br>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+        <%= link_to "Delete",   admin_category_path(category), method: "delete" %>
+      </div>
+    </span>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+         <%= link_to "Edit", edit_admin_category_path(category) %>
+      </div>
+    </span>
   </div>
-</span>
-<span class="button-wrap">
-  <div class="button button-raised button-primary button-pill">
-    <%= link_to "Edit", edit_user_idea_path(@user, idea), method: "get" %>
-  </div>
-</span>
 
-<br>
-<% end %>
 </div>
-
- </body>
-</html>
+    <% end %>
+  </body>
+  </html>

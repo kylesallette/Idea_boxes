@@ -10,24 +10,31 @@
       <img class="image" src="/assets/top.png" height="300px" width="100%" />
     </header>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
+      <li><%= link_to "Home", user_path(@user) %></li>
+          <li><%= link_to "Log Out", logout_path, method: :delete %></li>
+
       <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+        <a href="javascript:void(0)" class="dropbtn">Ideas</a>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <div class="dropdown">
+              <div class="dropdown-content">
+                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+
+              </div>
+          </div>
+
         </div>
+
       </li>
     </ul>
      <div class="welcome-user">
       <h1> Welcome, <%= @user.name.capitalize %>!</h1><br/>
+        <%= link_to "Add  Category", new_admin_category_path, class: "button",  :id => "add-cat" if current_user.admin? %>
         <%= link_to "View All Ideas", user_ideas_path(@user), method: "get", class: "button",  :id => "all-ideas"%>
         <%= link_to "Create New Idea",  new_user_idea_path(@user), method: "get" ,class: "button",  :id => "new-idea"%>
+         <%= link_to "Add  Image", new_admin_image_path, class: "button",  :id => "add-image" if current_user.admin? %>
     </div>
 
-
-    <%= link_to "Log Out", logout_path, method: :delete %>
   </body>
   </html>

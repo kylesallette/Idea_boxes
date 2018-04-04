@@ -26,25 +26,21 @@
       </li>
     </ul>
 
+<%= form_for [@user, @idea] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, placeholder: "Idea Title*" %><br><br>
+<%= f.label :content %>
+<%= f.text_area :content, placeholder: "Idea*",:size => "38%x9%" %><br><br>
+  <p> Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %></p>
+<%= f.submit class: "sub-btn" %>
 
-<% @ideas.each do |idea| %>
-<div class="ideas">
-<h2><%= link_to idea.name, user_idea_path(@user, idea) %></h2>
-<br>
-<span class="button-wrap">
-  <div class="button button-raised button-primary button-pill">
-    <%= link_to "Delete",  user_idea_path(@user, idea), method: "delete" %>
-  </div>
-</span>
-<span class="button-wrap">
-  <div class="button button-raised button-primary button-pill">
-    <%= link_to "Edit", edit_user_idea_path(@user, idea), method: "get" %>
-  </div>
-</span>
-
-<br>
+  <div>
+<% Image.all.each do |image| %>
+<%= image_tag(image.url)%>
+<%= check_box_tag("image_url[]",image.id) %>
+<% end %>
 <% end %>
 </div>
-
+</div>
  </body>
-</html>
+ </html>
