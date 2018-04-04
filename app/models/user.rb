@@ -1,13 +1,10 @@
 class User < ApplicationRecord
+  validates_presence_of :name, :email, :password
 
-validates :email, presence: true, uniqueness: { message: "This email already exists in our database!" }
-validates :password_digest, presence: true
-validates :name, presence: true
-has_many :ideas
-has_many :categories
-enum role: %w(default admin)
-has_secure_password
+    has_secure_password
+    has_many :ideas
 
+    enum role: ["default", "admin"]
 
 
 
