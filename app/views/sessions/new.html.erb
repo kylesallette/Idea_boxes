@@ -1,9 +1,32 @@
-<%= form_tag login_path do %>
-  <%= label_tag :username %>
-  <%= text_field_tag :username %>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+        <link rel="stylesheet" href="main.css"  type="text/css" />
+  </head>
+  <header>
 
-  <%= submit_tag "Log In" %>
-<% end %>
+</header>
+  <body>
+ <div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+<div class="welcome-background">
+<div class="login2  animated flip">
+  <h3>Login to Idea Box</h3>
+      <%= form_tag login_path,:id => 'id_9' do %>
+
+      <%= text_field_tag :name,nil, placeholder: "User Name*"%>
+
+      <%= password_field_tag :password, nil, placeholder: "Password*" %>
+      <%= submit_tag("Log In", :class=>"button1")%>
+      <% end %>
+    </div>
+    <img class="image" src="/assets/welcome.png"  width="100%" />
+  </div>
+</body>
+</html>
