@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    </header>
+    <ul>
+      <li><%= link_to "Home", user_path(@user) %></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ideas</a>
+        <div class="dropdown-content">
+          <div class="dropdown">
+              <div class="dropdown-content">
+                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+
+              </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+<% @categories.each do |category| %>
+    <div class="flex-container">
+      <div>
+    <h2><%= category.title %></h2>
+    <br>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+        <%= link_to "Delete",   admin_category_path(category), method: "delete" %>
+      </div>
+    </span>
+    <span class="button-wrap">
+      <div class="button button-raised button-primary button-pill">
+         <%= link_to "Edit", edit_admin_category_path(category) %>
+      </div>
+    </span>
+  </div>
+
+</div>
+    <% end %>
+  </body>
+  </html>

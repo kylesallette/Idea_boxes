@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <img class="image" src="/assets/top.png" height="300px" width="100%" />
+    </header>
+    <ul>
+      <li><%= link_to "Home", user_path(@user) %></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Ideas</a>
+        <div class="dropdown-content">
+          <div class="dropdown">
+              <div class="dropdown-content">
+                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+
+              </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
+
+<%= form_for [@user, @idea] do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, placeholder: "Idea Title*" %><br><br>
+<%= f.label :content %>
+<%= f.text_area :content, placeholder: "Idea*",:size => "38%x9%" %><br><br>
+  <p> Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %></p>
+<%= f.submit class: "sub-btn" %>
+
+  <div>
+<% Image.all.each do |image| %>
+<%= image_tag(image.url)%>
+<%= check_box_tag("image_url[]",image.id) %>
+<% end %>
+<% end %>
+</div>
+</div>
+ </body>
+ </html>
