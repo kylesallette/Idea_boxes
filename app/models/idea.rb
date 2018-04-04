@@ -1,6 +1,9 @@
 class Idea < ApplicationRecord
-  validates :content, presence: true, uniqueness: { message: "This email already exists in our database!" }
-  has_many :images
-  belongs_to :category
-  belongs_to :user
+  validates :name, :content, presence: true
+    belongs_to :user
+    belongs_to :category, optional: true
+
+    has_many :idea_images, dependent: :nullify
+    has_many :images, through: :idea_images
+
 end
