@@ -10,7 +10,7 @@
     <img class="image" src="/assets/city-4-2.gif" height="300px" width="100%" />
     </header>
     <ul>
-      <li><%= link_to "Home", user_path(@user) %></li>
+      <li><%= link_to "Home", user_path(current_user) %></li>
         <li><%= link_to "Log Out", logout_path, method: :delete %></li>
 
       <li class="dropdown">
@@ -18,8 +18,8 @@
         <div class="dropdown-content">
           <div class="dropdown">
               <div class="dropdown-content">
-                <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
-                  <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
+                <div><%= link_to "Create New Idea", new_user_idea_path(current_user) %></div>
+                  <div><%= link_to "All Ideas", user_ideas_path(current_user) %></div>
 
               </div>
           </div>
@@ -27,13 +27,14 @@
         </div>
       </li>
     </ul>
-
+<div class="new-cat-box">
 <%= form_for [:admin, @image] do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name, placeholder: "name for image*" %><br>
     <%= f.label :url %>
     <%= f.text_field :url, placeholder: "Image url*" %><br>
     <%= f.submit class: "sub-btn" %>
+  </div>
   </div>
   <% end %>
 </body>

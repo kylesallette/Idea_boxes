@@ -28,12 +28,7 @@
       </li>
     </ul>
     <div class="new-cat-box">
-<%= form_for [:admin, @category] do |f| %>
-    <%= f.label :title %>
-    <%= f.text_field :title, placeholder: "new category*" %><br>
-    <%= f.submit class: "sub-btn" %>
-      </div>
-  </div>
-  <% end %>
-</body>
-</html>
+      <%= image_tag(@image.url, size: "150x150" ) %>
+</div>
+    </body>
+    </html>
