@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-    <img class="image" src="/assets/water.gif" height="300px" width="100%" />
+    <img class="image" src="/assets/city-4-2.gif" height="300px" width="100%" />
     </header>
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
@@ -27,7 +27,8 @@
         </div>
       </li>
     </ul>
-
+<div class="new-idea-box">
+  <h1>EDIT IDEA</h1>
 <%= form_for [@user, @idea] do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name, placeholder: "Idea Title*" %><br><br>
@@ -35,14 +36,16 @@
 <%= f.text_area :content, placeholder: "Idea*",:size => "38%x9%" %><br><br>
   <p> Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %></p>
 <%= f.submit class: "sub-btn" %>
-
-  <div>
+</div>
 <% Image.all.each do |image| %>
-<%= image_tag(image.url)%>
-<%= check_box_tag("image_url[]",image.id) %>
-<% end %>
-<% end %>
+<div class="card">
+<%= image_tag (image.url), :class=> "pics" %>
+<%= check_box_tag("image_url[]",image.id)%>
+<div class="container">
 </div>
 </div>
+<% end %>
+<% end %>
+
  </body>
  </html>
