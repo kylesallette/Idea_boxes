@@ -28,7 +28,12 @@
       </li>
     </ul>
   <div class="new-cat-box">
-      <%= image_tag(@image.url, size: "150x150" ) %>
+      <%= image_tag(@image.url, size: "150x150" ) %><br>
+      <span class="button-wrap">
+        <div class="button button-raised button-primary button-pill">
+            <%= link_to "Back to Home", user_path(current_user) %>
+        </div>
+      </span>
 </div>
     </body>
     </html>
