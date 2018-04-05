@@ -29,8 +29,9 @@
     </ul>
 
 <% @categories.each do |category| %>
-    <div class="flex-container">
-      <div>
+      <div class="card">
+
+        <div class="container">
     <h2><%= category.title %></h2>
     <br>
     <span class="button-wrap">
@@ -44,7 +45,7 @@
       </div>
     </span>
   </div>
-
+</div>
 </div>
     <% end %>
   </body>
