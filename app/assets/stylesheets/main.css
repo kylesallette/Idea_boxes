@@ -657,7 +657,7 @@ box-shadow:0 0 20px white;
 .new-cat-box{
     background-color: #1baecc;
   width: 40%;
-  height: 200px;
+  height: 270px;
   align-content: center;
   text-align: center;
   display: block;
@@ -670,5 +670,24 @@ box-shadow:0 0 20px white;
   -webkit-box-shadow:0 0 20px white;
   -moz-box-shadow: 0 0 20px white;
   box-shadow:0 0 20px white;
+
+}
+
+.new-edit-box2{
+  background-color: #1baecc;
+width: 40%;
+height: 270px;
+align-content: center;
+text-align: center;
+display: block;
+margin-top: 40px;
+margin-left: 30%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius:15px;
+-webkit-box-shadow:0 0 20px white;
+-moz-box-shadow: 0 0 20px white;
+box-shadow:0 0 20px white;
 
 }
