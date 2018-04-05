@@ -1,0 +1,671 @@
+@import url('//fonts.googleapis.com/css?family=VT323');
+
+
+html { height: 100% }
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+body { background-image: radial-gradient( cover, rgba(92,100,111,1) 0%,rgba(31,35,40,1) 100%), url('http://i.minus.com/io97fW9I0NqJq.png') }
+.login {
+  background: #2b0a37;
+  border: 5px solid white;
+  border-radius: 6px;
+  height: 38%;
+  margin: 20px auto 0;
+  width: 25%;
+  align-items: center;
+
+  position: absolute;
+  Left: 0;
+Right: 0;
+Bottom: 0;
+Top: 0;
+text-align: center;
+line-height: 50px;
+margin-top: 15%
+
+}
+.login-2 {
+  background: #36a58d;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 400px;
+  margin: 20px auto 0;
+  width: 298px;
+  align-items: center;
+  text-align: center;
+    font-family: 'VT323', monospace;
+      font-size: 50px;
+}
+
+.login-3{
+  background: #36a58d;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 400px;
+  margin: 20px auto 0;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.login-4 {
+
+  background: #36a58d;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 400px;
+  margin: 20px auto 0;
+  width: 500px;
+  align-items: center;
+  text-align: center;
+
+}
+
+.login-5 {
+
+  background: #36a58d;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 250px;
+  margin: 20px auto 0;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.login h1 {
+  background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+  border-bottom: 1px solid #a6abaf;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  color: #727678;
+  display: block;
+  height: 43px;
+  font: 600 14px/1 'Open Sans', sans-serif;
+  padding-top: 14px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 #fff;
+}
+input[type="password"], input[type="text"] {
+  background: url('http://i.minus.com/ibhqW9Buanohx2.png') center left no-repeat, linear-gradient(top, #d6d7d7, #dee0e0);
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+input[type="password"]:focus, input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+.show-password {
+  display: block;
+  height: 16px;
+  margin: 26px 0 0 28px;
+  width: 87px;
+}
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 16px;
+
+  position: relative;
+  width: 64px;
+}
+input[type="checkbox"]:checked {
+  left: 29px;
+  width: 58px;
+}
+.toggle {
+  background: url(http://i.minus.com/ibitS19pe8PVX6.png) no-repeat;
+  display: block;
+  height: 16px;
+  margin-top: -20px;
+  width: 87px;
+  z-index: -1;
+}
+input[type="checkbox"]:checked + .toggle { background-position: 0 -16px }
+.forgot {
+  color: #7f7f7f;
+  display: inline-block;
+  float: right;
+  font: 12px/1 sans-serif;
+  left: -19px;
+  position: relative;
+  text-decoration: none;
+  top: 5px;
+  transition: color .4s;
+}
+
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  height: 12px;
+  margin: 30px auto;
+  opacity: 0.2;
+  width: 270px;
+}
+
+
+input[type="submit"]:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #31524d, 0px 5px 3px #999;
+}
+
+label{
+  width: 4em;
+  float: left;
+  text-align: center;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+.pics{
+  margin: 0.5em;
+ width: 150px;
+ height: 150px;
+ background-size: cover;
+ display: inline-block;
+
+}
+
+#top, #bottom, #left, #right {
+	background: black;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 17px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+
+
+h3 {
+
+   font-family: courier;
+ }
+
+ h2 {
+
+    font-family: courier;
+    color: white;
+  }
+
+
+ .flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ideas {
+  background-color: #36a58d;
+  margin: 5px;
+   border-radius: 25px;
+   text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+   align-items: stretch;
+
+}
+
+.flex-container > div {
+  background-color: #36a58d;
+
+  width: 350px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.welcome-background{
+    position: relative;
+
+
+}
+
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#1d84d0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 35px;
+  margin-bottom: 30px;
+
+}
+
+.button:hover {background-color: #002d4c}
+
+.button:active {
+  background-color: #002d4c;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.login2 {
+  background: #2b0a37;
+  border: 5px solid white;
+  border-radius: 6px;
+  height: 49%;
+
+  width: 25%;
+  align-items: center;
+margin:0px auto;
+  position: absolute;
+  Left: 0;
+Right: 0;
+Bottom: 0;
+Top: 0;
+text-align: center;
+line-height: 50px;
+margin-top: 15%;
+
+}
+
+label { display: block; }
+
+#id_9 {
+
+margin-right: 25px;
+right:0;
+left:0;
+}
+
+.login2 h3 {
+  color: white;
+  font-size: 20px;
+}
+
+
+
+.login3 {
+  background: #2b0a37;
+  border: 5px solid white;
+  border-radius: 6px;
+  height: 55%;
+
+  width: 23%;
+  align-items: center;
+margin:0px auto;
+  position: absolute;
+  Left: 0;
+Right: 0;
+Bottom: 0;
+Top: 0;
+text-align: center;
+line-height: 50px;
+margin-top: 15%;
+
+}
+
+
+.login3 h3 {
+  color: white;
+  font-size: 20px;
+
+}
+
+
+.button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#1d84d0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 35px;
+  margin-left: 8%;
+    font-family: 'VT323', monospace;
+}
+
+.grid_6{
+
+  margin-right: 11%;
+  right:0;
+  left:0;
+}
+
+
+.button3 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#1d84d0;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 35px;
+  margin-left: 10%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+      border-color: #1baecc;
+
+}
+
+
+
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #1baecc;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.welcome-user{
+  width: 40%;
+  height: 300px;
+  background-color:#1baecc;
+  margin-left: 30%;
+  border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius:15px;
+align-items: center;
+text-align: center;
+-webkit-box-shadow:0 0 20px white;
+-moz-box-shadow: 0 0 20px white;
+box-shadow:0 0 20px white;
+
+
+}
+
+.row {
+  position: relative;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 19.4%;
+     display: inline-block;
+      margin-right: 20px;
+      background-color: #1baecc;
+      margin-top: 20px;
+      -webkit-box-shadow:0 0 20px white;
+      -moz-box-shadow: 0 0 20px white;
+      box-shadow:0 0 20px white;
+      border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius:15px;
+
+
+
+
+}
+
+
+.container {
+    padding: 2px 16px;
+    -webkit-box-shadow:0 0 20px white;
+    -moz-box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
+    border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius:15px;
+
+
+
+
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px black solid;
+  .navlinks{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  min-width: 523px;
+  width: 100vw;
+  height: 45px;
+
+  .dropdown {
+    margin: 0px 15px;
+    .dashboard-icon {
+      font-size: 34px;
+    }
+  }
+
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.6px solid gray;
+    font-size: 18px;
+    padding: 1.5px;
+    display: block;
+    div {
+      padding: 12.5px 10px;
+      &:hover {
+
+        a:hover {color: black;}
+      }
+    }
+  }
+  .dashboard-drop:hover .dropdown-content {
+       left:auto;
+       right:0;
+       margin-right:-10px;
+       font-size: 16px;
+   }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    height: 30%;
+    align-content: center;
+    text-align: center;
+    -webkit-box-shadow:0 0 20px white;
+    -moz-box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+
+}
+
+.index-pic{
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+}
+
+body {
+
+    font-family: 'VT323', monospace;font-size: 22px;
+}
+
+h1 {
+  font-family: 'VT323', monospace;
+  color: white;
+
+
+}
+
+h3 {
+    font-family: 'VT323', monospace;
+
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+}
+
+body {
+  background-color: black;
+  background: url(cloud.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.idea-boxes{
+height: 600px;
+width: 40%;
+background-color: #1baecc;
+align-content: center;
+text-align: center;
+display: block;
+margin-left: 30%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius:15px;
+-webkit-box-shadow:0 0 20px white;
+-moz-box-shadow: 0 0 20px white;
+box-shadow:0 0 20px white;
+
+}
+
+.new-idea-box{
+  background-color: #1baecc;
+  width: 40%;
+  height: 410px;
+  align-content: center;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  margin-left: 30%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius:15px;
+  -webkit-box-shadow:0 0 20px white;
+  -moz-box-shadow: 0 0 20px white;
+  box-shadow:0 0 20px white;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
