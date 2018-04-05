@@ -11,11 +11,7 @@ class IdeasController < ApplicationController
     @user = User.find(params[:user_id])
     @idea = @user.ideas.create(idea_params)
     @idea.image_ids = params[:image_url]
-      if @idea.save
-        redirect_to user_ideas_path(@user)
-      else
-        render :new
-      end
+    redirect_to user_ideas_path(@user)
   end
 
   def index
@@ -50,17 +46,14 @@ class IdeasController < ApplicationController
     @user = User.find(params[:user_id])
     @idea.image_ids = params[:image_url]
     @idea.update(idea_params)
-      if @idea.save
-        redirect_to user_idea_path(@user, @idea)
-      else
-        render :new
-      end
+    redirect_to user_idea_path(@user, @idea)
   end
 
   private
 
   def idea_params
-    params.require(:idea).permit(:content, :name, :image, :categories_id, {:image_ids => []})
+    params.require(:idea).permit(:content, :name, :image, :category_id, {:image_ids => []}, :categories_id)
   end
+
 
 end
