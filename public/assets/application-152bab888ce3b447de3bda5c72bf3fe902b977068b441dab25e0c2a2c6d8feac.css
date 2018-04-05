@@ -653,41 +653,19 @@ box-shadow:0 0 20px white;
   -moz-box-shadow: 0 0 20px white;
   box-shadow:0 0 20px white;
 }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
 
-.new-cat-box{
-    background-color: #1baecc;
-  width: 40%;
-  height: 270px;
-  align-content: center;
-  text-align: center;
-  display: block;
-  margin-top: 40px;
-  margin-left: 30%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius:15px;
-  -webkit-box-shadow:0 0 20px white;
-  -moz-box-shadow: 0 0 20px white;
-  box-shadow:0 0 20px white;
 
-}
+ */
 
-.new-edit-box2{
-  background-color: #1baecc;
-width: 40%;
-height: 270px;
-align-content: center;
-text-align: center;
-display: block;
-margin-top: 40px;
-margin-left: 30%;
-border-top-left-radius: 15px;
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-border-bottom-left-radius:15px;
--webkit-box-shadow:0 0 20px white;
--moz-box-shadow: 0 0 20px white;
-box-shadow:0 0 20px white;
-
-}

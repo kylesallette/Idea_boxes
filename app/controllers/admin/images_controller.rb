@@ -27,7 +27,7 @@ class Admin::ImagesController < Admin::BaseController
  def create
    @image = Image.create(image_params)
    if @image.save
-   redirect_to admin_images_path
+   redirect_to admin_image_path(@image)
    else
      render :new
    end
