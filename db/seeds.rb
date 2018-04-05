@@ -14,11 +14,13 @@ User.create!(name:  "admin",
 
 
 
-Image.create!(name: "sun", url: "https://image.ibb.co/eFnVux/images_1.jpg" )
-Image.create!(name: "neon-car", url: "https://image.ibb.co/jJGqux/images_3.jpg")
-Image.create!(name: "cat", url: "https://image.ibb.co/gUztEx/images_4.jpg" )
-Image.create!(name: "tv-watching", url: "https://image.ibb.co/nAQ0ux/images_5.jpg" )
-Image.create!(name: "man-sunset", url: "https://image.ibb.co/gBcVux/images.jpg" )
+Image.create!(name: "mushroom", url: "https://image.ibb.co/btaaCH/000dc541fbaaf49d5e2b8bf642c10cf5.png" )
+Image.create!(name: "mario", url: "https://image.ibb.co/hzPrmc/2d5a24a09deadd2.png")
+Image.create!(name: "cat", url: "https://image.ibb.co/dfzVex/69846b63f30796d.png" )
+Image.create!(name: "sonic", url: "https://preview.ibb.co/b3vQCH/b767169e4d0f5f0845283dd63ee3a4e749349573.png" )
+Image.create!(name: "link", url: "https://preview.ibb.co/cKhizx/f517e09af9b5f97.png" )
+Image.create!(name: "heart", url: "https://image.ibb.co/i3z7Rc/heart_pixel_art_254x254.png" )
+Image.create!(name: "x", url: "https://image.ibb.co/dodLCH/unnamed.png" )
 
 
 

@@ -168,15 +168,13 @@ label{
   margin-right: 0.5em;
   display: inline-block;
 }
-.img-circular{
+.pics{
   margin: 0.5em;
  width: 150px;
  height: 150px;
  background-size: cover;
- display: inline;
- border-radius: 100px;
- -webkit-border-radius: 100px;
- -moz-border-radius: 100px;
+ display: inline-block;
+
 }
 
 #top, #bottom, #left, #right {
@@ -273,6 +271,7 @@ a {
   border-radius: 15px;
   box-shadow: 0 9px #999;
   margin-top: 35px;
+  margin-bottom: 30px;
 
 }
 
@@ -397,7 +396,13 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-style: solid;
+      border-color: #1baecc;
+
 }
+
+
+
 
 li {
     float: left;
@@ -412,7 +417,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #1baecc;
 }
 
 li.dropdown {
@@ -445,18 +450,19 @@ li.dropdown {
 
 .welcome-user{
   width: 40%;
-  height: 400px;
-  background-color: #2b0a37;
+  height: 300px;
+  background-color:#1baecc;
   margin-left: 30%;
-  border-top-left-radius: 5px;
-border-top-right-radius: 5px;
-border-bottom-right-radius: 5px;
-border-bottom-left-radius:5px;
+  border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius:15px;
 align-items: center;
 text-align: center;
--webkit-box-shadow:0 0 20px blue;
--moz-box-shadow: 0 0 20px blue;
-box-shadow:0 0 20px blue;
+-webkit-box-shadow:0 0 20px white;
+-moz-box-shadow: 0 0 20px white;
+box-shadow:0 0 20px white;
+
 
 }
 
@@ -470,7 +476,16 @@ box-shadow:0 0 20px blue;
     width: 19.4%;
      display: inline-block;
       margin-right: 20px;
-      background-color: #E2E2E2;
+      background-color: #1baecc;
+      margin-top: 20px;
+      -webkit-box-shadow:0 0 20px white;
+      -moz-box-shadow: 0 0 20px white;
+      box-shadow:0 0 20px white;
+      border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius:15px;
+
 
 
 
@@ -479,6 +494,15 @@ box-shadow:0 0 20px blue;
 
 .container {
     padding: 2px 16px;
+    -webkit-box-shadow:0 0 20px white;
+    -moz-box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
+    border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius:15px;
+
+
 
 
 }
@@ -506,16 +530,6 @@ nav {
     }
   }
 
-  .analytics-drop {
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 125px;
-    font-weight: bolder;
-    &:hover {cursor: default;}
-    div{margin-top: 5px;}
-  }
 
   .dropdown-content {
     display: none;
@@ -550,8 +564,13 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 20%;
+    height: 30%;
     align-content: center;
     text-align: center;
+    -webkit-box-shadow:0 0 20px white;
+    -moz-box-shadow: 0 0 20px white;
+    box-shadow:0 0 20px white;
+
 }
 
 .card:hover {
@@ -574,6 +593,13 @@ body {
     font-family: 'VT323', monospace;font-size: 22px;
 }
 
+h1 {
+  font-family: 'VT323', monospace;
+  color: white;
+
+
+}
+
 h3 {
     font-family: 'VT323', monospace;
 
@@ -581,4 +607,49 @@ h3 {
 
 h2 {
     font-family: 'VT323', monospace;
+}
+
+body {
+  background-color: black;
+  background: url(cloud.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.idea-boxes{
+height: 600px;
+width: 40%;
+background-color: #1baecc;
+align-content: center;
+text-align: center;
+display: block;
+margin-left: 30%;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-bottom-left-radius:15px;
+-webkit-box-shadow:0 0 20px white;
+-moz-box-shadow: 0 0 20px white;
+box-shadow:0 0 20px white;
+
+}
+
+.new-idea-box{
+  background-color: #1baecc;
+  width: 40%;
+  height: 410px;
+  align-content: center;
+  text-align: center;
+  display: block;
+  margin-top: 40px;
+  margin-left: 30%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius:15px;
+  -webkit-box-shadow:0 0 20px white;
+  -moz-box-shadow: 0 0 20px white;
+  box-shadow:0 0 20px white;
 }

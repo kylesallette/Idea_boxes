@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-    <img class="image" src="/assets/water.gif" height="300px" width="100%" />
+    <img class="image" src="/assets/city-4-2.gif" height="300px" width="100%" />
     </header>
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
@@ -28,13 +28,13 @@
         </div>
       </li>
     </ul>
-
+<div class="idea-boxes">
 <h1>Title:</h1><h3><%= @idea.name %></h3>
     <h1>Body:</h1><%= @idea.content %><br>
 
-    <p><% @idea.images.each do |image| %></p>
-    <%= image_tag(image.url, size: "150x150" ) %><br/>
-    <% end %>
+  <% @idea.images.each do |image| %>
+    <%= image_tag(image.url, size: "150x150" ) %>
+    <% end %><br>
     <span class="button-wrap">
       <div class="button button-raised button-primary button-pill">
         <%= link_to "Delete",  user_idea_path(@user, @idea), method: "delete" %>
@@ -46,6 +46,7 @@
       </div>
     </span>
   </div>
+</div>
 </div>
 </body>
 </html>

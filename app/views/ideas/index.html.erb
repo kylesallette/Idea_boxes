@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img class="image" src="/assets/city.gif" height="300px" width="100%" />
+      <img class="image animated flipInX" src="/assets/city-4-2.gif" height="300px" width="100%" />
     </header>
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
@@ -29,9 +30,7 @@
     </ul>
     <% @ideas.each do |idea| %>
     <div class="card">
-      <% if idea.images == nil %>
-      <%= image_tag (idea.images.first.url), :class => "index-pic"  %><br/>
-     <% end  %>
+    
       <div class="container">
 <h2><%= link_to idea.name, user_idea_path(@user, idea) %></h2>
 <span class="button-wrap">
