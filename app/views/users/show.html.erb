@@ -33,6 +33,5 @@
         <%= link_to "Create New Idea",  new_user_idea_path(@user), method: "get" ,class: "button",  :id => "new-idea"%>
          <%= link_to "Add  Image", new_admin_image_path, class: "button",  :id => "add-image" if current_user.admin? %>
     </div>
-
-  </body>
+   </body>
   </html>
