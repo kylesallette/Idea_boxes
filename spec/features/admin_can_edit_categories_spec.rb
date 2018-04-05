@@ -20,8 +20,13 @@ require 'rails_helper'
 
         click_button("Create Category")
 
-        expect(current_path).to eq(admin_categories_path)
-        expect(page).to have_content("something fun")
+        click_link('Edit')
+
+        fill_in("New category name.*", with: "Dog")
+
+        click_button("Update Category")
+
+        expect(page).to have_content("Dog")
       end
     end
-  end
+  end 

@@ -20,8 +20,9 @@ require 'rails_helper'
 
         click_button("Create Category")
 
-        expect(current_path).to eq(admin_categories_path)
-        expect(page).to have_content("something fun")
+        click_link('Delete')
+
+        expect(page).to_not have_content("something fun")
       end
     end
   end

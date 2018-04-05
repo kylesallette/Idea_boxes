@@ -14,7 +14,7 @@ require 'rails_helper'
 
       click_button("Log In")
 
-
+    
 
       click_link("Log Out")
 
