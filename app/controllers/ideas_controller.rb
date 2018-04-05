@@ -54,7 +54,7 @@ class IdeasController < ApplicationController
         redirect_to user_idea_path(@user, @idea)
       else
         render :new
-      end 
+      end
   end
 
   private
@@ -62,6 +62,5 @@ class IdeasController < ApplicationController
   def idea_params
     params.require(:idea).permit(:content, :name, :image, :categories_id, {:image_ids => []})
   end
-
 
 end
