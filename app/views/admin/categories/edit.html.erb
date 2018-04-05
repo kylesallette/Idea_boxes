@@ -28,11 +28,12 @@
         </div>
       </li>
     </ul>
-
+<div class="new-edit-box2">
+  <h1>Edit Category Title</h1>
 <%= form_for [:admin, @category] do |f| %>
-    <%= f.label :title%>
     <%= f.text_field :title, placeholder: "New category name.*" %><br><br>
     <%= f.submit class: "sub-btn" %>
+  </div>
     <% end %>
   </body>
   </html>
