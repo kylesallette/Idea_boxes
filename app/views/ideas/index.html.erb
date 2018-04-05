@@ -13,7 +13,6 @@
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
         <li><%= link_to "Log Out", logout_path, method: :delete %></li>
-
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Ideas</a>
         <div class="dropdown-content">
@@ -24,13 +23,11 @@
 
               </div>
           </div>
-
-        </div>
+          </div>
       </li>
     </ul>
     <% @ideas.each do |idea| %>
     <div class="card">
-    
       <div class="container">
 <h2><%= link_to idea.name, user_idea_path(@user, idea) %></h2>
 <span class="button-wrap">
@@ -43,10 +40,8 @@
       <%= link_to "Delete",  user_idea_path(@user, idea), method: "delete" %>
   </div>
 </span>
-
-      </div>
+    </div>
     </div>
 <% end %>
-
- </body>
+   </body>
 </html>

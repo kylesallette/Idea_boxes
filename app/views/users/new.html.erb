@@ -18,14 +18,9 @@
 <h3>Create a user here</h3>
 
 <%= form_for @user, :html => { :class => "form grid_6" }  do |f| %>
-
   <%= f.text_field :name, placeholder: "User Name*" %>
-
-
   <%= f.text_field :email, placeholder: "Email*" %>
-
-
-   <%= f.password_field :password, placeholder: "Password*" %>
+  <%= f.password_field :password, placeholder: "Password*" %>
 
   <%= f.submit("Create User", :class=>"button3") %>
 <% end %>

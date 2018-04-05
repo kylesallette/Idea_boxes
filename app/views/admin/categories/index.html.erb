@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
             <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-  </head>
+    </head>
   <body>
     <header>
       <img class="image" src="/assets/city-4-2.gif" height="300px" width="100%" />
@@ -12,7 +12,6 @@
     <ul>
       <li><%= link_to "Home", user_path(current_user) %></li>
         <li><%= link_to "Log Out", logout_path, method: :delete %></li>
-
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Ideas</a>
         <div class="dropdown-content">
@@ -20,18 +19,14 @@
               <div class="dropdown-content">
                 <div><%= link_to "Create New Idea", new_user_idea_path(current_user) %></div>
                   <div><%= link_to "All Ideas", user_ideas_path(current_user) %></div>
-
               </div>
           </div>
-
-        </div>
+       </div>
       </li>
     </ul>
-
-<% @categories.each do |category| %>
+   <% @categories.each do |category| %>
       <div class="card">
-
-        <div class="container">
+      <div class="container">
     <h2><%= category.title %></h2>
     <br>
     <span class="button-wrap">

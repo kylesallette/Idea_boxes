@@ -23,31 +23,25 @@
               <div class="dropdown-content">
                 <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
                   <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
-
-              </div>
+             </div>
           </div>
-
         </div>
       </li>
     </ul>
 <div class="new-idea-box">
   <h1>NEW IDEA</h1>
-<%= form_for [@user, @idea] do |f| %>
-
-<%= f.text_field :name, placeholder: "Idea Title*" %><br>
-
-<%= f.text_area :content , placeholder: "Idea*",:size => "60%x12%"  %><br>
-Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %><br>
-<%= f.submit class: "sub-btn" %>
-</div>
-
-<% Image.all.each do |image| %>
+     <%= form_for [@user, @idea] do |f| %>
+     <%= f.text_field :name, placeholder: "Idea Title*" %><br>
+     <%= f.text_area :content , placeholder: "Idea*",:size => "60%x12%"  %><br>
+     Category select  <%= f.collection_select(:categories_id, Category.all, :id, :title) %><br>
+    <%= f.submit class: "sub-btn" %>
+     </div>
+    <% Image.all.each do |image| %>
   <div class="card">
-<%= image_tag(image.url, :class=> "pics")%>
-<%= check_box_tag("image_url[]",image.id) %>
-</div>
-<% end %>
-<% end %>
-
+   <%= image_tag(image.url, :class=> "pics")%>
+    <%= check_box_tag("image_url[]",image.id) %>
+   </div>
+   <% end %>
+   <% end %>
 </body>
 </html>

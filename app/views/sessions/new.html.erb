@@ -9,8 +9,7 @@
         <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
   <header>
-
-</header>
+ </header>
   <body>
  <div id="left"></div>
 <div id="right"></div>
@@ -20,9 +19,7 @@
 <div class="login2  animated flip">
   <h3>Login to Idea Box</h3>
       <%= form_tag login_path,:id => 'id_9' do %>
-
       <%= text_field_tag :name,nil, placeholder: "User Name*"%>
-
       <%= password_field_tag :password, nil, placeholder: "Password*" %><br>
       <%= submit_tag("Log In", :class=>"button1")%>
       <% end %>

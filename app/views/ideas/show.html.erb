@@ -13,7 +13,6 @@
     <ul>
       <li><%= link_to "Home", user_path(@user) %></li>
         <li><%= link_to "Log Out", logout_path, method: :delete %></li>
-
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Ideas</a>
         <div class="dropdown-content">
@@ -21,17 +20,14 @@
               <div class="dropdown-content">
                 <div><%= link_to "Create New Idea", new_user_idea_path(@user) %></div>
                   <div><%= link_to "All Ideas", user_ideas_path(@user) %></div>
-
-              </div>
+             </div>
           </div>
-
-        </div>
+       </div>
       </li>
     </ul>
 <div class="idea-boxes">
 <h1>Title:</h1><h3><%= @idea.name %></h3>
     <h1>Body:</h1><%= @idea.content %><br>
-
   <% @idea.images.each do |image| %>
     <%= image_tag(image.url, size: "150x150" ) %>
     <% end %><br>
